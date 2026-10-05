@@ -4,6 +4,11 @@ import 'package:provider/provider.dart';
 import 'providers/auth_provider.dart';
 import 'screens/login_screen.dart';
 import 'screens/inicio_screen.dart';
+import 'screens/camara_screen.dart';
+import 'screens/alicuotas_screen.dart';
+import 'screens/registrar_pago_screen.dart';
+
+import 'screens/notificaciones_screen.dart';
 
 void main() {
   runApp(
@@ -36,6 +41,10 @@ class AraucariasApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginScreen(),
         '/inicio': (context) => const InicioScreen(),
+        '/camara': (context) => const CamaraScreen(),
+        '/notificaciones': (context) => const NotificacionesScreen(),
+        '/alicuotas': (context) => const AlicuotasScreen(),
+        '/registrar-pago': (context) => const RegistrarPagoScreen(),
       },
     );
   }

@@ -97,12 +97,51 @@ class InicioScreen extends StatelessWidget {
 
               SizedBox(
                 width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/alicuotas');
+                  },
+                  icon: const Icon(Icons.receipt_long),
+                  label: const Text('Mis alícuotas'),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/camara');
+                  },
+                  icon: const Icon(Icons.camera_alt),
+                  label: const Text('Reportar novedad'),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+
+              SizedBox(
+                width: double.infinity,
                 child: ElevatedButton.icon(
                   onPressed: () {
                     // Más adelante iremos a la pantalla de reservas
                   },
                   icon: const Icon(Icons.calendar_month),
                   label: const Text('Mis reservas'),
+                ),
+              ),
+
+              const SizedBox(height: 15),
+
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/notificaciones');
+                  },
+                  icon: const Icon(Icons.notifications_active),
+                  label: const Text('Recordatorios de reservas'),
                 ),
               ),
 

@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import '../models/usuario.dart';
 
 class AuthService {
-  static const String baseUrl = 'http://localhost:3000';
+  static const String baseUrl = 'http://192.168.18.8:3000';
 
   Future<Map<String, dynamic>> login(
     String correo,
